@@ -16,7 +16,7 @@
 
 - name: Clone kafka-manager git repo
   git:
-    repo: https://github.com/yahoo/kafka-manager.git
+    repo: "{{ kafka_manager_repo }}"
     dest: "{{ kafka_manager_base_dir }}"
     version: tags/{{ kafka_manager_version }}
     force: yes
